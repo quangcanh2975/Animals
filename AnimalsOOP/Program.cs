@@ -1,68 +1,70 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace AnimalsOOP
 {
-    public interface Animal
+
+    public interface IAnimal 
     {
         void say_hello();
     }
-    public class Cat : Animal
+    public class Cat : IAnimal
     {
         public void say_hello()
         {
             Console.WriteLine("Hello, I'm Cat");
         }
     }
-    public class Dog : Animal
+    public class Dog : IAnimal
     {
         public void say_hello()
         {
             Console.WriteLine("Hello, I'm Dog");
         }
     }
-    public class Pig : Animal
-    {
-        public void say_hello()
-        {
-            Console.WriteLine("Hello, I'm Pig");
-        }
-    }
-    public class Chicken : Animal
-	{
-	public void say_hello()
-	{
-		Console.WriteLine("Hello, I'm Chicken");
-	}
-	}
     
     public class Zoo
     {
-        private int animalAmount = 0;
-	private Animal[] zooAnimals = new Animal[100];
-        public int GetAmount()
+        private int animalAmount {get; set;}
+        private List<IAnimal> zooAnimals = new List<IAnimal>();
+        
+        
+        
+        public void AddAnimal(IAnimal a)
         {
-            return animalAmount;
+            zooAnimals.Add(a);  
         }
-        public bool AddAnimal()
-	{	
-		
+        public void RemoveAnimal(IAnimal a) 
+        {
+            zooAnimals.Remove(a);
         }
-    	public bool RemoveAnimal()
-	{
 
-	}
+        public void PrintAnimals()
+        {
+            foreach (IAnimal i in zooAnimals)
+            {
+                Console.WriteLine(i);
+            }
+        }
 
     }
     class Program
     {
         static void Main(string[] args)
         {
-            Animal[] zooAnimals = new Animal[100];
-            zooAnimals[0] = new Cat();
-            zooAnimals[1] = new Dog();
-            zooAnimals[0].say_hello();
-            zooAnimals[1].say_hello();
+            Zoo MyZoo = new Zoo();
+            Cat cat = new Cat();
+            Dog dog = new Dog();
+            MyZoo.AddAnimal(cat);
+            MyZoo.AddAnimal(dog);
+            MyZoo.PrintAnimals();
+            MyZoo.RemoveAnimal(dog);
+            
+            MyZoo.PrintAnimals();
             Console.ReadKey();
         }
-    }
+   } 
 }

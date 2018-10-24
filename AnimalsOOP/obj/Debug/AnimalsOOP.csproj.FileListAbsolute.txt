@@ -5,5 +5,8 @@ c:\users\nttm\documents\visual studio 2013\Projects\AnimalsOOP\AnimalsOOP\bin\De
 c:\users\nttm\documents\visual studio 2013\Projects\AnimalsOOP\AnimalsOOP\obj\Debug\AnimalsOOP.exe
 c:\users\nttm\documents\visual studio 2013\Projects\AnimalsOOP\AnimalsOOP\obj\Debug\AnimalsOOP.pdb
 C:\Users\Son Go Han\Documents\Visual Studio 2013\Projects\AnimalsOOP\AnimalsOOP\bin\Debug\AnimalsOOP.exe.config
+C:\Users\Son Go Han\Documents\Visual Studio 2013\Projects\AnimalsOOP\AnimalsOOP\bin\Debug\AnimalsOOP.exe
+C:\Users\Son Go Han\Documents\Visual Studio 2013\Projects\AnimalsOOP\AnimalsOOP\bin\Debug\AnimalsOOP.pdb
+C:\Users\Son Go Han\Documents\Visual Studio 2013\Projects\AnimalsOOP\AnimalsOOP\obj\Debug\AnimalsOOP.csprojResolveAssemblyReference.cache
 C:\Users\Son Go Han\Documents\Visual Studio 2013\Projects\AnimalsOOP\AnimalsOOP\obj\Debug\AnimalsOOP.exe
 C:\Users\Son Go Han\Documents\Visual Studio 2013\Projects\AnimalsOOP\AnimalsOOP\obj\Debug\AnimalsOOP.pdb
